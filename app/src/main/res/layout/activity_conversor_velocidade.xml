@@ -1,9 +1,72 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ConversorVelocidade_Activity">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:layout_marginTop="10sp"
+        android:id="@+id/tv_titulo1"
+        android:text="Conversor Velocidade"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_titulo1"
+        android:textSize="20sp"
+        android:layout_marginTop="10sp"
+        android:id="@+id/tv_titulo2"
+        android:text="Escolha uma opção abaixo: "
+        android:layout_centerHorizontal="true"/>
+
+    <Spinner
+        android:layout_width="250sp"
+        android:id="@+id/spinner"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_titulo2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25sp"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/et_paraConverter"
+        android:minWidth="300dp"
+        android:layout_below="@+id/spinner"
+        android:layout_marginTop="50sp"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Converter"
+        android:padding="20sp"
+        android:id="@+id/btn_converter"
+        android:layout_below="@+id/et_paraConverter"
+        android:layout_marginTop="50sp"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20sp"
+        android:text="Voltar"
+        android:id="@+id/btn_voltar"
+        android:layout_below="@+id/btn_converter"
+        android:layout_marginTop="15sp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_resultado"
+        android:layout_centerHorizontal="true"
+        android:textSize="30sp"
+        android:layout_below="@id/btn_voltar"
+        android:layout_marginTop="60sp"/>
+
+</RelativeLayout>
