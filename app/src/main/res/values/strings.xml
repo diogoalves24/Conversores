@@ -17,4 +17,9 @@
         <item>$ para R</item>
         <item>R para $</item>
     </string-array>
+
+    <string-array name="array_velocidade">
+        <item>Km/h para M/h</item>
+        <item>M/h para Km/h</item>
+    </string-array>
 </resources>

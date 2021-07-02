@@ -40,6 +40,7 @@
         android:layout_below="@+id/spinner"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="50sp"
+        android:inputType="numberDecimal"
         android:minWidth="300dp" />
 
     <Button
@@ -64,10 +65,10 @@
         android:id="@+id/tv_resultado"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="center"
         android:layout_below="@id/btn_voltar"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="60sp"
+        android:gravity="center"
         android:textSize="30sp" />
 
 </RelativeLayout>
