@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Conversores</string>
+    <string-array name="array_temperaturas">
+        <item>ºC para ºF</item>
+        <item>ºF para ºC</item>
+        <item>ºC para ºK</item>
+        <item>ºK para ºC</item>
+        <item>ºF para ºK</item>
+        <item>ºK para ºF</item>
+    </string-array>
+
+    <string-array name="array_moedas">
+        <item>€ para $</item>
+        <item>$ para €</item>
+        <item>€ para R</item>
+        <item>R para €</item>
+        <item>$ para R</item>
+        <item>R para $</item>
+    </string-array>
+</resources>
