@@ -11,12 +11,11 @@ import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.TextView;
 
-import java.util.ArrayList;
 
 public class ConversorGraus_Activity extends AppCompatActivity implements AdapterView.OnItemSelectedListener{
 
     Spinner spinner;
-    EditText et_paraConverter, et_convertido;
+    EditText et_paraConverter;
     Button btn_converter, btn_voltar;
     TextView tv_resultado;
     double formula, converter;
@@ -40,32 +39,32 @@ public class ConversorGraus_Activity extends AppCompatActivity implements Adapte
                 if(spinner.getSelectedItemPosition() == 0){
                     converter = Double.parseDouble(et_paraConverter.getText().toString());
                     formula = 1.8 * converter + 32;
-                    tv_resultado.setText("Resultado = " + String.valueOf(formula));
+                    tv_resultado.setText("Resultado = " + formula);
                 }
                 else if(spinner.getSelectedItemPosition() == 1){
                     converter = Double.parseDouble(et_paraConverter.getText().toString());
                     formula = (converter - 32) / 1.8;
-                    tv_resultado.setText("Resultado = " + String.valueOf(formula));
+                    tv_resultado.setText("Resultado = " + formula);
                 }
                 else if(spinner.getSelectedItemPosition() == 2){
                     converter = Double.parseDouble(et_paraConverter.getText().toString());
                     formula = converter + 273;
-                    tv_resultado.setText("Resultado = " + String.valueOf(formula));
+                    tv_resultado.setText("Resultado = " + formula);
                 }
                 else if(spinner.getSelectedItemPosition() == 3){
                     converter = Double.parseDouble(et_paraConverter.getText().toString());
                     formula = converter - 273;
-                    tv_resultado.setText("Resultado = " + String.valueOf(formula));
+                    tv_resultado.setText("Resultado = " + formula);
                 }
                 else if(spinner.getSelectedItemPosition() == 4){
                     converter = Double.parseDouble(et_paraConverter.getText().toString());
                     formula = ((converter - 32) + 273) / 1.8;
-                    tv_resultado.setText("Resultado = " + String.valueOf(formula));
+                    tv_resultado.setText("Resultado = " + formula);
                 }
                 else{
                     converter = Double.parseDouble(et_paraConverter.getText().toString());
                     formula = 1.8 * (converter - 273) + 32;
-                    tv_resultado.setText("Resultado = " + String.valueOf(formula));
+                    tv_resultado.setText("Resultado = " + formula);
                 }
             }
         });
@@ -73,7 +72,6 @@ public class ConversorGraus_Activity extends AppCompatActivity implements Adapte
         btn_voltar.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 finish();
-
             }
         });
     }
